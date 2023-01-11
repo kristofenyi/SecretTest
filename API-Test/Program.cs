@@ -20,10 +20,7 @@ namespace API_Test
 
             Console.WriteLine(builder.Configuration["secret"]);
             Console.WriteLine("Secrete is " + builder.Configuration["secret"]);
-            Console.WriteLine(builder.Configuration["jwt:key"]);
-            Console.WriteLine("secrete under this");
-            Console.WriteLine(builder.Configuration["secret"]);
-            Console.WriteLine(builder.Configuration["secret"]);
+            Console.WriteLine("this is JWT token" + builder.Configuration["jwt:key"]);
 
             // Add services to the container.
 
