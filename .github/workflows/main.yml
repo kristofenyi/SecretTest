@@ -28,3 +28,5 @@ jobs:
       run: dotnet restore 
     - name: Build
       run: dotnet publish
+    - name: Run app
+      run: dotnet ./API-Test/bin/Debug/net7.0/publish/API-Test.dll
