@@ -12,6 +12,8 @@ on:
     
 env:
   Secret: ${{ secrets.SECRET}}
+  Jwt: ${{ secrets.MULTI }}
+  
 
 jobs:
   build:
