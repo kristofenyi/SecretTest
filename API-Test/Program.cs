@@ -20,8 +20,8 @@ namespace API_Test
 
             Console.WriteLine(builder.Configuration["secret"]);
             Console.WriteLine("Secrete is " + builder.Configuration["secret"]);
-            Console.WriteLine("this is JWT token" + builder.Configuration["jwt:key"]);
-
+            Console.WriteLine("this should be JWT, but in code it is called jwtabc" + builder.Configuration["jwtabc"]);
+            Console.WriteLine("this should be JWT, in code it is called jwt" + builder.Configuration["jwt"]);
             // Add services to the container.
 
             builder.Services.AddControllers();
