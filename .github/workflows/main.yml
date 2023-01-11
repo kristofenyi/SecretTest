@@ -12,7 +12,7 @@ on:
     
 env:
   Secret: ${{ secrets.SECRET}}
-  Jwt: ${{ secrets.JWT }}
+  Jwt:Key: ${{ secrets.JWT.Key }}
   
 
 jobs:
