@@ -17,8 +17,9 @@ namespace API_Test
             //{
             //    Console.WriteLine(mySecret);
             //}
-
-            Console.WriteLine(builder.Configuration["secret"]);
+            
+            var mySecret = new String(builder.Configuration["secret"]);
+            Console.WriteLine(mySecret.Length);
             Console.WriteLine("Secrete is " + builder.Configuration["secret"]);
             Console.WriteLine("this should be JWT, but in code it is called jwtabc" + builder.Configuration["jwtabc"]);
             Console.WriteLine("this should be JWT, in code it is called jwt" + builder.Configuration["jwt"]);
